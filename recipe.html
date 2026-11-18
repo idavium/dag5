@@ -13,19 +13,61 @@
 
     <link rel="stylesheet" href="css/recipe.css">
 
+    <script type="application/ld+json">
+
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "@id": "https://example.com/",
+
+            "name": "Recipe details spicy soup",
+            "description": "Very tasty soup with many flavours",
+
+            "url": "https://example.com",
+            "logo": "https://example.com/images/logo.svg",
+            "images": [
+            "https://example.com/images/spicy_soup.svg",
+            "https://example.com/images/spicy_soup.svg"
+            ],
+
+            "telephone": "+4543434343",
+
+            "geo": {
+                "@type": "GeoCoordinates"
+                "latitude": "30.405",
+                "longitude": "15.300"
+            },
+
+            "openingHoursSpecification": [
+                {
+                    "dayOfWeek": [
+                    "monday",
+                    "friday",
+                    "saturday"
+                    ],
+                    "opens": "10.00",
+                    "closes": "11.00"
+                }
+            ]
+        }
+
+    </script>
+
 </head>
 
 <body>
 
     <div class="container">
+
         <!-- navigation -->
+
         <nav class="navigation">
 
             <div class="menu_container">
 
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="recipe.html">Recipes</a></li>
+                    <li><a href="recipe.html" class="active">Recipes</a></li>
                     <li><a href="search.html">Search</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
@@ -37,9 +79,9 @@
             <div class="hamburger_menu">
 
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
-	            <path d="M0 0h512v512H0z" fill="none" />
-	            <path fill="currentColor" d="M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z" />
-                </svg>
+                        <path d="M0 0h512v512H0z" fill="none" />
+                        <path fill="currentColor" d="M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z" />
+                    </svg>
                 </span>
 
             </div>
@@ -48,10 +90,318 @@
 
         <div class="mobile_menu">
 
-          <ul>
+            <ul>
+
                 <li><a class="menu_item" href="index.html">Home</a></li>
-                <li><a class="menu_item" href="about-us.html">Recipes</a></li>
-                <li><a class="menu_item" href="">Search</a></li>
+                <li><a class="menu_item" href="about.html">Recipes</a></li>
+                <li><a class="menu_item" href="search.html">Search</a></li>
+                <li><a class="menu_item" href="about.html">About</a></li>
+
             </ul>
 
         </div>
+
+        <!-- hero section -->
+
+        <section class="hero">
+
+            <div class="hero_container">
+
+                <div class="hero_text">
+
+                    <h6>#1 Bender's most shiny recipe</h6>
+                    <h4>Boozy brown</h4>
+                    <h4 class="hero_title_large">Lentil Soup</h4>
+
+                    <div class="recipe_info">
+
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m15 16l-2.414-2.414A2 2 0 0 1 12 12.172V6" />
+                                </g>
+                            </svg>
+                            20 minutes</p>
+
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 2048 2048">
+                                <path d="M0 0h2048v2048H0z" fill="none" />
+                                <path fill="currentColor"
+                                    d="M1280 64q0 179 66 330t190 278t190 278t66 330q0 106-27 204t-78 183t-120 156t-155 120t-184 77t-204 28t-204-27t-183-78t-156-120t-120-155t-77-184t-28-204q0-84 18-165t52-155t84-141t113-121q7 38 19 78t28 80t38 76t46 67q20 25 52 25q27 0 45-19t19-46q0-11-3-20t-10-18q-28-41-49-81t-37-82t-23-87t-8-95q0-119 45-224t124-183T992 46t224-46h64zm-256 1856q133 0 249-50t204-137t137-203t50-250q0-151-56-281t-162-236q-130-131-204-289t-88-342q-83 11-153 50t-123 99t-81 135t-29 160q0 78 23 141t68 126q19 26 29 54t11 62q0 40-15 75t-42 61t-61 42t-75 15q-46 0-81-17t-62-46t-48-65t-40-72q-46 73-68 157t-23 171q0 133 50 249t137 204t203 137t250 50" />
+                            </svg>
+                            230 calories</p>
+
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
+                                <path d="M0 0h32v32H0z" fill="none" />
+                                <path fill="currentColor"
+                                    d="M30 30h-8V4h8Zm-6-2h4V6h-4Zm-4 2h-8V12h8Zm-6-2h4V14h-4Zm-4 2H2V18h8Z" />
+                            </svg>
+                            Beginner</p>
+
+                    </div>
+
+                    <h3>INGREDIENTS</h3>
+
+                    <ul class="ingredients_list">
+                        <li>¼ cup extra virgin olive oil</li>
+                        <li>1 medium yellow or white onion,<br>chopped</li>
+                        <li>2 carrots, peeled and chopped</li>
+                        <li>4 garlic gloves, pressed or minced</li>
+                        <li>2 teaspoons ground cumin</li>
+                        <li>1 teaspoon curry powder</li>
+                        <li>½ teaspoon dried thyme</li>
+                        <li>1 large can (28ounces) diced <br>tomatoes, lightly drained</li>
+                        <li>4 cups vegetable broth</li>
+                        <li>2 cups water</li>
+                        <li>1 teaspoon salt, more to taste</li>
+                        <li>Pinch of red pepper flakes</li>
+                        <li>Freshly ground black pepper, to taste</li>
+                        <li>1 cup chopped fresh collard greens or <br>kale, tough ribs removed</li>
+                        <li>1 to 2 tablespoons lemon juice <br>(½ to 1 medium lemon), to taste</li>
+                    </ul>
+
+                    <a href="" class="recipe_button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path fill="currentColor" d="M17.75 11a1.25 1.25 0 1 0 0 2.5a1.25 1.25 0 0 0 0-2.5" />
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="m4.173 8.115l2.077-.23V3.912c0-.643.49-1.18 1.13-1.24a50.3 50.3 0 0 1 9.24 0c.64.06 1.13.597 1.13 1.24v3.971l2.077.231a1.84 1.84 0 0 1 1.584 1.387a14.4 14.4 0 0 1 0 6.94l-.183.739a.75.75 0 0 1-.728.569h-2.75v2.333a1.21 1.21 0 0 1-1.09 1.205c-3.099.31-6.22.31-9.32 0a1.21 1.21 0 0 1-1.09-1.205V17.75H3.5a.75.75 0 0 1-.728-.57l-.183-.738a14.4 14.4 0 0 1 0-6.94a1.84 1.84 0 0 1 1.584-1.387M16.25 7.74a52 52 0 0 0-8.5 0V4.146a49 49 0 0 1 8.5 0zm0 8.762a.37.37 0 0 0-.247-.345a45.3 45.3 0 0 0-8.006 0a.37.37 0 0 0-.247.349v3.314a45 45 0 0 0 8.5 0zm3.663-.252H17.75v-.333a1.21 1.21 0 0 0-1.09-1.205l-.407-.039a2 2 0 0 0-.173-.027a38 38 0 0 0-8.16 0a2 2 0 0 0-.173.027l-.407.04a1.21 1.21 0 0 0-1.09 1.204v.333H4.087l-.042-.169a12.9 12.9 0 0 1 0-6.217a.34.34 0 0 1 .294-.258l2.082-.231a50.5 50.5 0 0 1 11.158 0l2.082.231c.143.016.26.119.294.258a12.9 12.9 0 0 1 0 6.217z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Print</a>
+
+                    <a href="" class="recipe_button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 1024 1024">
+                            <path d="M0 0h1024v1024H0z" fill="none" />
+                            <path fill="currentColor"
+                                d="M923 283.6a260 260 0 0 0-56.9-82.8a264.4 264.4 0 0 0-84-55.5A265.3 265.3 0 0 0 679.7 125c-49.3 0-97.4 13.5-139.2 39q-15 9.15-28.5 20.1q-13.5-10.95-28.5-20.1c-41.8-25.5-89.9-39-139.2-39c-35.5 0-69.9 6.8-102.4 20.3c-31.4 13-59.7 31.7-84 55.5a258.4 258.4 0 0 0-56.9 82.8c-13.9 32.3-21 66.6-21 101.9c0 33.3 6.8 68 20.3 103.3c11.3 29.5 27.5 60.1 48.2 91c32.8 48.9 77.9 99.9 133.9 151.6c92.8 85.7 184.7 144.9 188.6 147.3l23.7 15.2c10.5 6.7 24 6.7 34.5 0l23.7-15.2c3.9-2.5 95.7-61.6 188.6-147.3c56-51.7 101.1-102.7 133.9-151.6c20.7-30.9 37-61.5 48.2-91c13.5-35.3 20.3-70 20.3-103.3c.1-35.3-7-69.6-20.9-101.9M512 814.8S156 586.7 156 385.5C156 283.6 240.3 201 344.3 201c73.1 0 136.5 40.8 167.7 100.4C543.2 241.8 606.6 201 679.7 201c104 0 188.3 82.6 188.3 184.5c0 201.2-356 429.3-356 429.3" />
+                        </svg>
+                        Favorite</a>
+
+                </div>
+
+                <div class="hero_image">
+                    <img src="img/Lentil soup.png" alt="Bowl of lentil soup">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="instructions">INSTRUCTIONS</div>
+
+            <div class="instructions_content">
+                <ol>
+                    <li>Warm the olive oil in a large Dutch oven or pot over medium heat. One-fourth cup olive oil may
+                        seem like a lot, but it adds a lovely richness and heartiness to this nutritious soup.</li>
+                    <li>Once the oil is shimmering, add the chopped onion and carrot and cook, stirring often, until the
+                        onion has softened and is turning translucent, about 5 minutes.</li>
+                    <li>Add the garlic, cumin, curry powder and thyme. Cook until fragrant while stirring constantly,
+                        about 30 seconds. Pour in the drained diced tomatoes and cook for a few more minutes, stirring
+                        often, in order to enhance their flavor.</li>
+                    <li>Pour in the lentils, broth and the water. Add 1 teaspoon salt and a pinch of red pepper flakes.
+                        Season generously with freshly ground black pepper. Raise heat and bring the mixture to a boil,
+                        then partially cover the pot and reduce the heat to maintain a gentle simmer. Cook for 25 to 30
+                        minutes, or until the lentils are tender but still hold their shape. </li>
+                    <li>Transfer 2 cups of the soup to a blender. Securely fasten the lid, protect your hand from steam
+                        with a tea towel placed over the lid, and purée the soup until smooth. Pour the puréed soup back
+                        into the pot. (Or, use an immersion blender to blend a portion of the soup).</li>
+                    <li>Add the chopped greens and cook for 5 more minutes, or until the greens have softened to your
+                        liking. Remove the pot from the heat and stir in 1 tablespoon of lemon juice. Taste and season
+                        with more salt, pepper andd/or lemon juice until the flavors really sing. For spicier soup, add
+                        another pinch or two of red pepper flakes.</li>
+                    <li>Serve while hot. Leftovers will keep well for about 4 days in the refrigerator, or can be frozen
+                        for several months (just defrost before serving).</li>
+                </ol>
+            </div>
+
+            <section class="bonus_section">
+
+                <div class="bonus_headings">
+
+                    <div class="bonus_instructions">
+                        <h2>INSTRUCTIONS (BONUS)</h2>
+                    </div>
+
+                    <div class="bonus_ingredients">
+                        <h2>INGREDIENTS</h2>
+                    </div>
+
+                </div>
+
+                <div class="bonus_content">
+
+                    <div class="bonus_steps">
+                        <span>STEP 1</span>
+                        <p>Warm the olive oil in a large Dutch oven or pot over medium heat. One-fourth cup olive oil
+                            may seem like a lot, but it adds a lovely richness and heartiness to this nutritious soup.
+                        </p>
+
+                        <span>STEP 2</span>
+                        <p>Once the oil is shimmering, add the chopped onion and carrot and cook, stirring often, until
+                            the onion has softened and is turning translucent, about 5 minutes.</p>
+
+                        <span>STEP 3</span>
+                        <p>Add the garlic, cumin, curry powder and thyme. Cook until fragrant while stirring constantly,
+                            about 30 seconds. Pour in the drained diced tomatoes and cook for a few more minutes,
+                            stirring often, in order to enhance their flavor.</p>
+
+                        <span>STEP 4</span>
+                        <p>Pour in the lentils, broth and the water. Add 1 teaspoon salt and a pinch of red pepper
+                            flakes. Season generously with freshly ground black pepper. Raise heat and bring the mixture
+                            to a boil, then partially cover the pot and reduce the heat to maintain a gentle simmer.
+                            Cook for 25 to 30 minutes, or until the lentils are tender but still hold their shape.</p>
+
+                        <span>STEP 5</span>
+                        <p>Transfer 2 cups of the soup to a blender. Securely fasten the lid, protect your hand from
+                            steam with a tea towel placed over the lid, and purée the soup until smooth. Pour the puréed
+                            soup back into the pot. (Or, use an immersion blender to blend a portion of the soup).</p>
+
+                        <span>STEP 6</span>
+                        <p>Add the chopped greens and cook for 5 more minutes, or until the greens have softened to your
+                            liking. Remove the pot from the heat and stir in 1 tablespoon of lemon juice. Taste and
+                            season with more salt, pepper andd/or lemon juice until the flavors really sing. For spicier
+                            soup, add another pinch or two of red pepper flakes.</p>
+
+                        <span>STEP 7</span>
+                        <p>Serve while hot. Leftovers will keep well for about 4 days in the refrigerator, or can be
+                            frozen for several months (just defrost before serving).</p>
+                    </div>
+
+                    <div class="bonus_ingredients_list">
+
+                        <p>¼ cup extra virgin olive oil</p>
+                        <p>1 medium yellow or white onion, chopped</p>
+                        <p>2 carrots, peeled and chopped</p>
+                        <p>4 garlic gloves, pressed or minced</p>
+                        <p>2 teaspoons ground cumin</p>
+                        <p>1 teaspoon curry powder</p>
+                        <p>½ teaspoon dried thyme</p>
+                        <p>1 large can (28ounces) diced tomatoes, lightly drained</p>
+                        <p>4 cups vegetable broth</p>
+                        <p>2 cups water</p>
+                        <p>1 teaspoon salt, more to taste</p>
+                        <p>Pinch of red pepper flakes</p>
+                        <p>Freshly ground black pepper, to taste</p>
+                        <p>1 cup chopped fresh collard greens or kale, tough ribs removed</p>
+                        <p>1 to 2 tablespoons lemon juice (½ to 1 medium lemon), to taste</p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <footer class="footer">
+
+                <div class="footer_container">
+
+
+                    <!-- Sociale medier -->
+                    <div class="footer_social">
+
+                        <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                    viewBox="0 0 48 48">
+                                    <path d="M0 0h48v48H0z" fill="none" />
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M43.112 14.394a5 5 0 0 0-3.533-3.533c-2.314-.894-24.732-1.332-31.236.025A5 5 0 0 0 4.81 14.42c-1.045 4.583-1.124 14.491.026 19.177a5 5 0 0 0 3.533 3.533c4.583 1.055 26.371 1.203 31.236 0a5 5 0 0 0 3.533-3.533c1.114-4.993 1.193-14.287-.026-19.203" />
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" d="M30.567 23.995L20.12 18.004v11.982Z" />
+                                </svg>
+
+                                YouTube</a></p>
+
+                        <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                    viewBox="0 0 48 48">
+                                    <path d="M0 0h48v48H0z" fill="none" />
+                                    <rect width="37" height="37" x="5.5" y="5.5" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" rx="4" ry="4" />
+                                    <circle cx="35.35" cy="12.65" r="2.25" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="24" cy="24" r="8.25" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                                Instagram</a></p>
+
+                        <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                    viewBox="0 0 48 48">
+                                    <path d="M0 0h48v48H0z" fill="none" />
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M24 42.5V18.575a5.075 5.075 0 0 1 5.075-5.075c2.498 0 4.057.74 5.126 2.123m-14.5 7.665h10.15" />
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M38.5 5.5h-29a4 4 0 0 0-4 4v29a4 4 0 0 0 4 4h29a4 4 0 0 0 4-4v-29a4 4 0 0 0-4-4" />
+                                </svg>
+
+                                Facebook</a></p>
+
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="footer_links">
+                        <p><a href="index.html">Home</a></p>
+                        <p><a href="recipe.html">Recipe</a></p>
+                        <p><a href="about.html">About</a></p>
+                    </div>
+
+                    <!-- Spotify -->
+                    <div class="footer_spotify">
+
+                        <div class="spotify_links">
+
+                            <a href="https://open.spotify.com/track/64MgjDp6ijaLvS3T83JHX9" class="spotify_link_one">
+                                Listen on Spotify <br> https://open.spotify.com/track/64MgjDp6ijaLvS3T83JHX9</a>
+
+
+                        </div>
+
+                        <div class="footer_etsy">
+
+                            <span class="etsy_icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                    viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                                        <path
+                                            d="M2 10c.78-3.816 3.67-6.87 7.406-7.91c.314-.087.47-.131.555-.038c.085.094.022.248-.102.558L9 4.5M14 2c3.816.78 6.87 3.67 7.91 7.406c.087.314.131.47.038.555c-.094.085-.248.022-.558-.102L19.5 9m2.5 5c-.78 3.816-3.67 6.87-7.406 7.91c-.314.087-.47.131-.555.038c-.085-.094-.022-.248.102-.558L15 19.5M10 22c-3.816-.78-6.87-3.67-7.91-7.406c-.087-.314-.131-.47-.038-.555c.094-.085.248-.022.558.102L4.5 15" />
+                                        <path stroke-linejoin="round"
+                                            d="m8.613 11.665l3.499-4.492c.274-.351.787-.132.787.336v3.476c0 .28.2.508.449.508h1.702c.386 0 .592.514.337.842l-3.499 4.492c-.274.351-.787.132-.787-.336v-3.476c0-.28-.2-.508-.449-.508H8.95c-.386 0-.593-.514-.337-.842" />
+                                    </g>
+                                </svg>
+                            </span>
+
+                            <p>Etsy is powered by 100%<br>renewable electricity.</p>
+
+                        </div>
+
+                    </div>
+
+            </footer>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

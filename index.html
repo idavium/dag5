@@ -18,13 +18,15 @@
 <body>
 
     <div class="container">
+
         <!-- navigation -->
+
         <nav class="navigation">
 
             <div class="menu_container">
 
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="recipe.html">Recipes</a></li>
                     <li><a href="search.html">Search</a></li>
                     <li><a href="about.html">About</a></li>
@@ -37,9 +39,9 @@
             <div class="hamburger_menu">
 
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
-	            <path d="M0 0h512v512H0z" fill="none" />
-	            <path fill="currentColor" d="M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z" />
-                </svg>
+                        <path d="M0 0h512v512H0z" fill="none" />
+                        <path fill="currentColor" d="M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z" />
+                    </svg>
                 </span>
 
             </div>
@@ -48,10 +50,13 @@
 
         <div class="mobile_menu">
 
-          <ul>
-                <li><a class="menu_item" href="index.html">Home</a></li>
-                <li><a class="menu_item" href="about-us.html">Recipes</a></li>
-                <li><a class="menu_item" href="">Search</a></li>
+            <ul>
+
+                <li><a class="menu_item active" href="index.html">Home</a></li>
+                <li><a class="menu_item" href="about.html">Recipes</a></li>
+                <li><a class="menu_item" href="search.html">Search</a></li>
+                <li><a class="menu_item" href="about.html">About</a></li>
+
             </ul>
 
         </div>
@@ -81,7 +86,8 @@
                             </svg>
 
                         </span>
-                        <input type="text" placeholder="Search" class="seach_input">
+
+                        <input type="text" placeholder="Search" class="search_input">
 
                     </div>
 
@@ -92,6 +98,7 @@
         </section>
 
         <!-- todays recipe section -->
+
         <section class="todays_recipes">
 
             <div class="todays_recipes_headline">Recipes of the day</div>
@@ -102,7 +109,7 @@
 
                     <div class="todays_recipes_content_block_image">
 
-                        <img src="https://picsum.photos/300/175" alt="">
+                        <img src="img/Krabbe.png" alt="" class="image">
 
                     </div>
 
@@ -112,7 +119,7 @@
 
                             <h5>CRAP'TACULAR</h5>
 
-                            <p>Lorem ipsum text cdsnckjsdncjkdncnskj cd skjcnskcnjn ckj dsc</p>
+                            <p>Fresh crab packed with bold spices, herbs and a squeeze of lemon.</p>
 
                         </div>
 
@@ -148,7 +155,7 @@
 
                     <div class="todays_recipes_content_block_image">
 
-                        <img src="https://picsum.photos/300/175" alt="">
+                        <img src="img/Kylling.png" alt="" class="image">
 
                     </div>
 
@@ -158,7 +165,7 @@
 
                             <h5>Chick'tastic</h5>
 
-                            <p>Lorem ipsum text cdsnckjsdncjkdncnskj cd skjcnskcnjn ckj dsc</p>
+                            <p>Juicy grilled chicken served with fresh greens and creamy avocado.</p>
 
                         </div>
 
@@ -194,7 +201,7 @@
 
                     <div class="todays_recipes_content_block_image">
 
-                        <img src="https://picsum.photos/300/175" alt="">
+                        <img src="img/Kage.png" alt="" class="image">
 
                     </div>
 
@@ -204,7 +211,7 @@
 
                             <h5>DESSERT'A'LICOUS</h5>
 
-                            <p>Lorem ipsum text cdsnckjsdncjkdncnskj cd skjcnskcnjn ckj dsc</p>
+                            <p>Creamy cheesecake topped with fresh raspberries and crunchy pistachios.</p>
 
                         </div>
 
@@ -240,7 +247,7 @@
 
                     <div class="todays_recipes_content_block_image">
 
-                        <img src="https://picsum.photos/300/175" alt="">
+                        <img src="img/Kød.png" alt="" class="image">
 
                     </div>
 
@@ -250,7 +257,7 @@
 
                             <h5>SPICY MEAT'A'BOWL</h5>
 
-                            <p>Lorem ipsum text cdsnckjsdncjkdncnskj cd skjcnskcnjn ckj dsc</p>
+                            <p>Spicy seasoned beef, fluffy rice and colorful veggies with a kick.</p>
 
                         </div>
 
@@ -294,124 +301,135 @@
             <div class="todays_recipes_headline">Categories</div>
 
             <div class="categories_content">
-                <a href=""> 
-                <div class="categories_content_block">
+                <a href="">
+                    <div class="categories_content_block">
 
-                    <span data-category="seafood" class="iconify">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
-                        <path d="M0 0h32v32H0z" fill="none" />
-                        <circle cx="24" cy="7" r="1" fill="currentColor" />
-                        <path fill="currentColor"
-                        d="M26 2a16.02 16.02 0 0 0-16 16v2H3a1 1 0 0 0-.707 1.707l8 8A1 1 0 0 0 12 29v-7h2A16.02 16.02 0 0 0 30 6V2ZM10 26.586L5.414 22H10ZM12 20v-2a13.94 13.94 0 0 1 3.908-9.678l7.77 7.77A13.94 13.94 0 0 1 14 20ZM28 6a13.9 13.9 0 0 1-2.98 8.606L17.395 6.98A13.9 13.9 0 0 1 26 4h2Z" />
-                        </svg>
+                        <span data-category="seafood" class="iconify">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
+                                <path d="M0 0h32v32H0z" fill="none" />
+                                <circle cx="24" cy="7" r="1" fill="currentColor" />
+                                <path fill="currentColor"
+                                    d="M26 2a16.02 16.02 0 0 0-16 16v2H3a1 1 0 0 0-.707 1.707l8 8A1 1 0 0 0 12 29v-7h2A16.02 16.02 0 0 0 30 6V2ZM10 26.586L5.414 22H10ZM12 20v-2a13.94 13.94 0 0 1 3.908-9.678l7.77 7.77A13.94 13.94 0 0 1 14 20ZM28 6a13.9 13.9 0 0 1-2.98 8.606L17.395 6.98A13.9 13.9 0 0 1 26 4h2Z" />
+                            </svg>
 
-                    </span>
+                        </span>
 
-                    <p data-category="seafood">Seafood</p>
+                        <p data-category="seafood">Seafood</p>
 
-                </div>
-</a>
-                <a href=""> 
-                <div class="categories_content_block">
-
-                    <span data-category="chicken" class="iconify">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none" />
-                        <g fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path stroke-linecap="square" d="M18.123 7.08a1.911 1.911 0 1 0 3.8-.408a1.911 1.911 0 1 0-3.8.408" />
-                        <path d="M18.154 14.337a3.707 3.707 0 0 1 3.707 3.707v3.347H1.873v-2.087a8 8 0 0 1 8-8h1.957" />
-                        <path stroke-linecap="square" d="m10.198 13.496l1.235-1.615c1.392-1.902 3.833-2.482 5.454-1.296c1.62 1.185 1.806 3.688.415 5.59l-1.097 1.558m2.643-9.378l-1.756 2.298" />
-                        <path d="M6.161 6.608a2 2 0 1 1 0-4m4.264 4a2 2 0 0 1 0-4" />
-                        </g>
-                        </svg>
-
-                    </span>
-
-                    <p data-category="chicken">Chicken</p>
-
-                </div>
+                    </div>
                 </a>
-                <a href=""> 
-                <div class="categories_content_block">
+                <a href="">
+                    <div class="categories_content_block">
 
-                    <span data-category="pastas" class="iconify">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none" />
-                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M23.5 5.5h-10l-4-3m0 9l4-3h10m-20-6h-3m3 3h-3m3 3h-3m3 3h-3m5 9.5l2-5.5v-3h-4v-11h6v14l-2 6zm0-19.5v11m2-11v11" />
-                        </svg>
+                        <span data-category="chicken" class="iconify">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="square"
+                                        d="M18.123 7.08a1.911 1.911 0 1 0 3.8-.408a1.911 1.911 0 1 0-3.8.408" />
+                                    <path
+                                        d="M18.154 14.337a3.707 3.707 0 0 1 3.707 3.707v3.347H1.873v-2.087a8 8 0 0 1 8-8h1.957" />
+                                    <path stroke-linecap="square"
+                                        d="m10.198 13.496l1.235-1.615c1.392-1.902 3.833-2.482 5.454-1.296c1.62 1.185 1.806 3.688.415 5.59l-1.097 1.558m2.643-9.378l-1.756 2.298" />
+                                    <path d="M6.161 6.608a2 2 0 1 1 0-4m4.264 4a2 2 0 0 1 0-4" />
+                                </g>
+                            </svg>
 
-                    </span>
+                        </span>
 
-                    <p data-category="pastas">pastas</p>
+                        <p data-category="chicken">Chicken</p>
 
-                </div>
+                    </div>
                 </a>
-                <a href=""> 
-                <div class="categories_content_block">
+                <a href="">
+                    <div class="categories_content_block">
 
-                    <span data-category="snacks" class="iconify">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none" />
-                    <g fill="currentColor">
-                    <path d="M17.231 4.298A2.75 2.75 0 0 1 19.944 2H22v1.5h-2.056a1.25 1.25 0 0 0-1.233 1.045L18.635 5h3.453L20.42 20H18.5v-1.5h.579l1.333-12H10.6l.394 3.157l-1.488.186L8.9 5h8.214z" />
-                    <path fill-rule="evenodd" d="M8 11.5a6 6 0 0 0-6 6v1.75a2.25 2.25 0 0 0 2.25 2.25h10A2.75 2.75 0 0 0 17 18.75V17.5a6 6 0 0 0-6-6zm6.25 8.5H6.372q.126-.354.128-.75V17.5a4.5 4.5 0 1 1 9 0v1.25c0 .69-.56 1.25-1.25 1.25M5 17.5c0-1.717.72-3.265 1.876-4.359A4.5 4.5 0 0 0 3.5 17.5v1.75a.75.75 0 0 0 1.5 0z" clip-rule="evenodd" />
-                    </g>
-                    </svg>
+                        <span data-category="pastas" class="iconify">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    d="M23.5 5.5h-10l-4-3m0 9l4-3h10m-20-6h-3m3 3h-3m3 3h-3m3 3h-3m5 9.5l2-5.5v-3h-4v-11h6v14l-2 6zm0-19.5v11m2-11v11" />
+                            </svg>
 
-                    </span>
+                        </span>
 
-                    <p data-category="snacks">snacks</p>
+                        <p data-category="pastas">pastas</p>
 
-                </div>
+                    </div>
                 </a>
-                <a href=""> 
-                <div class="categories_content_block">
+                <a href="">
+                    <div class="categories_content_block">
 
-                    <span data-category="beef/pork" class="iconify">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none" />
-                        <path fill="currentColor" d="M11.9 2C8 2 4.9 5.4 5 9.3c.1 2.6 1.6 4.8 3.7 5.9c1.4.7 2.3 2.1 2.3 3.6v.2c0 1.7 1.3 3 3 3c4 0 5-5 5-13c0 0 0-7-7.1-7M14 20c-.6 0-1-.4-1-1v-.2c0-2.2-1.3-4.3-3.3-5.4C8.1 12.6 7.1 11 7 9.2c0-1.3.5-2.7 1.4-3.7S10.6 4 11.8 4C16.7 4 17 8.2 17 9c0 9.9-1.7 11-3 11m1.8-12.4l-7.5 2.7Q8 9.85 8 9.1c0-.7.2-1.3.5-2l5.2-1.9c1.2.6 1.8 1.5 2.1 2.4m-2.9 7.5l2.8-1c-.1 1.5-.4 2.6-.6 3.3l-1.3.5c0-1-.3-1.9-.9-2.8M16 9.2c0 1.2 0 2.3-.1 3.2l-4 1.5c-.5-.5-1.1-1-1.8-1.3c-.4-.2-.8-.5-1.1-.8z" />
-                        </svg>
+                        <span data-category="snacks" class="iconify">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <g fill="currentColor">
+                                    <path
+                                        d="M17.231 4.298A2.75 2.75 0 0 1 19.944 2H22v1.5h-2.056a1.25 1.25 0 0 0-1.233 1.045L18.635 5h3.453L20.42 20H18.5v-1.5h.579l1.333-12H10.6l.394 3.157l-1.488.186L8.9 5h8.214z" />
+                                    <path fill-rule="evenodd"
+                                        d="M8 11.5a6 6 0 0 0-6 6v1.75a2.25 2.25 0 0 0 2.25 2.25h10A2.75 2.75 0 0 0 17 18.75V17.5a6 6 0 0 0-6-6zm6.25 8.5H6.372q.126-.354.128-.75V17.5a4.5 4.5 0 1 1 9 0v1.25c0 .69-.56 1.25-1.25 1.25M5 17.5c0-1.717.72-3.265 1.876-4.359A4.5 4.5 0 0 0 3.5 17.5v1.75a.75.75 0 0 0 1.5 0z"
+                                        clip-rule="evenodd" />
+                                </g>
+                            </svg>
 
-                    </span>
+                        </span>
 
-                    <p data-category="beef/pork">beef/pork</p>
+                        <p data-category="snacks">snacks</p>
 
-                </div>
+                    </div>
                 </a>
-                <a href=""> 
-                <div class="categories_content_block">
+                <a href="">
+                    <div class="categories_content_block">
 
-                    <span data-category="vegetarian" class="iconify">
-                       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none" />
-                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-                        <path d="M12 21v-8" />
-                        <path d="M12 13c0 -5 -4 -8 -9 -8 0 5 4 8 9 8" />
-                        <path d="M12 13c0 -5 4 -8 9 -8 0 5 -4 8 -9 8" />
-                        </g>
-                        </svg>
+                        <span data-category="beef/pork" class="iconify">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path fill="currentColor"
+                                    d="M11.9 2C8 2 4.9 5.4 5 9.3c.1 2.6 1.6 4.8 3.7 5.9c1.4.7 2.3 2.1 2.3 3.6v.2c0 1.7 1.3 3 3 3c4 0 5-5 5-13c0 0 0-7-7.1-7M14 20c-.6 0-1-.4-1-1v-.2c0-2.2-1.3-4.3-3.3-5.4C8.1 12.6 7.1 11 7 9.2c0-1.3.5-2.7 1.4-3.7S10.6 4 11.8 4C16.7 4 17 8.2 17 9c0 9.9-1.7 11-3 11m1.8-12.4l-7.5 2.7Q8 9.85 8 9.1c0-.7.2-1.3.5-2l5.2-1.9c1.2.6 1.8 1.5 2.1 2.4m-2.9 7.5l2.8-1c-.1 1.5-.4 2.6-.6 3.3l-1.3.5c0-1-.3-1.9-.9-2.8M16 9.2c0 1.2 0 2.3-.1 3.2l-4 1.5c-.5-.5-1.1-1-1.8-1.3c-.4-.2-.8-.5-1.1-.8z" />
+                            </svg>
 
-                    </span>
+                        </span>
 
-                    <p data-category="vegetarian">vegetarian</p>
+                        <p data-category="beef/pork">beef/pork</p>
 
-                </div>
+                    </div>
                 </a>
-                <a href=""> 
-                <div class="categories_content_block">
+                <a href="">
+                    <div class="categories_content_block">
 
-                    <span data-category="dessert" class="iconify">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
-                        <path d="M0 0h1024v1024H0z" fill="none" />
-                        <path fill="currentColor" d="M128 416v-48a144 144 0 0 1 168.6-141.9a224.1 224.1 0 0 1 430.8 0A144 144 0 0 1 896 368v48a384 384 0 0 1-352 382.7V896h-64v-97.3A384 384 0 0 1 128 416m287.1-32h193.8a144 144 0 0 1 58.9-132.8a160 160 0 0 0-311.6 0A144 144 0 0 1 415.1 384m-72.9 0a72 72 0 1 0-140.5 0zm339.6 0h140.4a72 72 0 1 0-140.5 0zM512 736a320 320 0 0 0 318.4-288H193.6A320 320 0 0 0 512 736M384 896h256a32 32 0 1 1 0 64H384a32 32 0 1 1 0-64" />
-                        </svg>
+                        <span data-category="vegetarian" class="iconify">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5">
+                                    <path d="M12 21v-8" />
+                                    <path d="M12 13c0 -5 -4 -8 -9 -8 0 5 4 8 9 8" />
+                                    <path d="M12 13c0 -5 4 -8 9 -8 0 5 -4 8 -9 8" />
+                                </g>
+                            </svg>
 
-                    </span>
+                        </span>
 
-                    <p data-category="dessert">dessert</p>
+                        <p data-category="vegetarian">vegetarian</p>
 
-                </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="categories_content_block">
+
+                        <span data-category="dessert" class="iconify">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
+                                <path d="M0 0h1024v1024H0z" fill="none" />
+                                <path fill="currentColor"
+                                    d="M128 416v-48a144 144 0 0 1 168.6-141.9a224.1 224.1 0 0 1 430.8 0A144 144 0 0 1 896 368v48a384 384 0 0 1-352 382.7V896h-64v-97.3A384 384 0 0 1 128 416m287.1-32h193.8a144 144 0 0 1 58.9-132.8a160 160 0 0 0-311.6 0A144 144 0 0 1 415.1 384m-72.9 0a72 72 0 1 0-140.5 0zm339.6 0h140.4a72 72 0 1 0-140.5 0zM512 736a320 320 0 0 0 318.4-288H193.6A320 320 0 0 0 512 736M384 896h256a32 32 0 1 1 0 64H384a32 32 0 1 1 0-64" />
+                            </svg>
+
+                        </span>
+
+                        <p data-category="dessert">dessert</p>
+
+                    </div>
                 </a>
             </div>
 
@@ -423,186 +441,176 @@
             <div class="image_section_controller">
                 <div class="image_section_box">
                     <h4>In the kitchen</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ducimus nesciunt fugit, maxime illo laborum quae illum iure officiis debitis? Distinctio nulla suscipit ut quam culpa ullam corporis provident sit.</p>
+                    <p>Good food starts with a little creativity and a lot of love. Step into our kitchen, where fresh
+                        ingredients, bold flavors and simple techniques come together to create something special.</p>
                 </div>
             </div>
-    
+
 
         </section>
 
         <!-- content area/in the kitchen -->
-          <section class="categories">
+        <section class="categories">
 
             <div class="todays_recipes_headline">In the kitchen</div>
 
-        <section class="content_area">
+            <section class="content_area">
 
-        </section>
+            </section>
 
-        <div class="kitchen_grid">
+            <div class="kitchen_grid">
 
-            <div class="kitchen_text">
+                <div class="kitchen_text">
 
-                <p class="kitchen_label">In the kitchen</p>
+                    <p class="kitchen_label">In the kitchen</p>
 
-                <h3 class="kitchen_title">HOW TO PLATE AS A PRO</h3>
+                    <h3 class="kitchen_title">HOW TO PLATE AS A PRO</h3>
 
-                <p class="kitchen_description">Big brawl in the kitchen. Who takes it? <br>
-                Winner gets to take home the desserts! <br>
-                Losers can wave goodbye! </p>
+                    <p class="kitchen_description">Great food deserves a beautiful presentation. Learn how to arrange
+                        your ingredients, play with colors and add those finishing touches that make every dish look
+                        restaurant-worthy.</p>
 
-                <a href="" class="kitchen_button">PLATING</a>
+                    <a href="" class="kitchen_button">PLATING</a>
+
+                </div>
+
+                <div class="kitchen_image">
+
+                    <img src="img/Plate.png" alt="">
+
+                </div>
+
+                <div class="kitchen_image">
+
+                    <img src="img/Opskrift.png" alt="">
+
+                </div>
+
+                <div class="kitchen_text">
+
+                    <p class="kitchen_label">In the kitchen</p>
+
+                    <h3 class="kitchen_title">RECIPES ARE FOR...</h3>
+
+                    <p class="kitchen_description">...sharing, experimenting and making memories. From handwritten
+                        family favorites to new kitchen discoveries, every recipe has a story worth passing on.</p>
+
+                    <a href="" class="kitchen_button">RECIPE</a>
+
+                </div>
+
+                <div class="kitchen_text">
+
+                    <p class="kitchen_label">In the kitchen</p>
+
+                    <h3 class="kitchen_title">MEATS - HOW TO BASTE</h3>
+
+                    <p class="kitchen_description">The secret to a perfect steak is in the details. Learn how to baste
+                        with butter, garlic and fresh herbs for a juicy, tender steak packed with flavor.</p>
+
+                    <a href="" class="kitchen_button">GUIDES</a>
+
+                </div>
+
+                <div class="kitchen_image">
+
+                    <img src="img/Baste.png" alt="">
+
+                </div>
 
             </div>
 
-            <div class="kitchen_image">
+            <footer class="footer">
 
-                 <img src="https://picsum.photos/300/175" alt="">
+                <div class="footer_container">
 
-            </div>
+                    <!-- Sociale medier -->
+                    <div class="footer_social">
 
-            <div class="kitchen_image">
+                        <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                    viewBox="0 0 48 48">
+                                    <path d="M0 0h48v48H0z" fill="none" />
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M43.112 14.394a5 5 0 0 0-3.533-3.533c-2.314-.894-24.732-1.332-31.236.025A5 5 0 0 0 4.81 14.42c-1.045 4.583-1.124 14.491.026 19.177a5 5 0 0 0 3.533 3.533c4.583 1.055 26.371 1.203 31.236 0a5 5 0 0 0 3.533-3.533c1.114-4.993 1.193-14.287-.026-19.203" />
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" d="M30.567 23.995L20.12 18.004v11.982Z" />
+                                </svg>
 
-                <img src="https://picsum.photos/300/175" alt="">
+                                YouTube</a></p>
 
-            </div>
+                        <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                    viewBox="0 0 48 48">
+                                    <path d="M0 0h48v48H0z" fill="none" />
+                                    <rect width="37" height="37" x="5.5" y="5.5" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" rx="4" ry="4" />
+                                    <circle cx="35.35" cy="12.65" r="2.25" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="24" cy="24" r="8.25" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
 
-            <div class="kitchen_text">
+                                Instagram</a></p>
 
-                <p class="kitchen_label">In the kitchen</p>
+                        <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                    viewBox="0 0 48 48">
+                                    <path d="M0 0h48v48H0z" fill="none" />
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M24 42.5V18.575a5.075 5.075 0 0 1 5.075-5.075c2.498 0 4.057.74 5.126 2.123m-14.5 7.665h10.15" />
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M38.5 5.5h-29a4 4 0 0 0-4 4v29a4 4 0 0 0 4 4h29a4 4 0 0 0 4-4v-29a4 4 0 0 0-4-4" />
+                                </svg>
 
-                <h3 class="kitchen_title">RECIPES ARE FOR...</h3>
+                                Facebook</a></p>
 
-                <p class="kitchen_description">Big brawl in the kitchen. Who takes it? <br>
-                Winner gets to take home the desserts! <br>
-                Losers can wave goodbye! </p>
+                    </div>
 
-                <a href="" class="kitchen_button">RECIPE</a>
+                    <!-- Navigation -->
+                    <div class="footer_links">
+                        <p><a href="index.html">Home</a></p>
+                        <p><a href="recipe.html">Recipe</a></p>
+                        <p><a href="about.html">About</a></p>
+                    </div>
 
-            </div>
+                    <!-- Spotify -->
+                    <div class="footer_spotify">
 
-            <div class="kitchen_text">
+                        <div class="spotify_links">
 
-                <p class="kitchen_label">In the kitchen</p>
-
-                <h3 class="kitchen_title">MEATS - HOW TO BASTE</h3>
-
-                <p class="kitchen_description">Big brawl in the kitchen. Who takes it? <br>
-                Winner gets to take home the desserts! <br>
-                Very scrumptious! </p>
-
-                <a href="" class="kitchen_button">GUIDES</a>
-
-        </div>
-
-         <div class="kitchen_image">
-
-            <img src="https://picsum.photos/300/175" alt="">
-
-        </div>
-
-        </div>
-
-        
-    <footer class="footer">
-
-    <div class="footer_container">
-
-        <!-- Sociale medier -->
-        <div class="footer_social">
-
-            <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-	        <path d="M0 0h24v24H0z" fill="none" />
-	        <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
-		    <path d="M10.386 8.357A.75.75 0 0 0 9.25 9v6a.75.75 0 0 0 1.136.643l5-3a.75.75 0 0 0 0-1.286zM13.542 12l-2.792 1.675v-3.35z" />
-		    <path d="M17.03 4.641a64.5 64.5 0 0 0-10.06 0l-2.241.176a2.975 2.975 0 0 0-2.703 2.475a28.6 28.6 0 0 0 0 9.416a2.975 2.975 0 0 0 2.703 2.475l2.24.176c3.349.262 6.713.262 10.062 0l2.24-.176a2.975 2.975 0 0 0 2.703-2.475c.52-3.117.52-6.299 0-9.416a2.975 2.975 0 0 0-2.703-2.475zM7.087 6.137a63 63 0 0 1 9.828 0l2.24.175c.676.053 1.229.56 1.34 1.228a27 27 0 0 1 0 8.92a1.475 1.475 0 0 1-1.34 1.228l-2.24.175a63 63 0 0 1-9.828 0l-2.24-.175a1.475 1.475 0 0 1-1.34-1.228a27 27 0 0 1 0-8.92a1.475 1.475 0 0 1 1.34-1.228z" />
-	        </g>
-            </svg>
-            YouTube</a></p>
-
-            <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-	        <path d="M0 0h24v24H0z" fill="none" />
-	        <path fill="currentColor" d="M18.437 20.937H5.563a2.5 2.5 0 0 1-2.5-2.5V5.563a2.5 2.5 0 0 1 2.5-2.5h12.874a2.5 2.5 0 0 1 2.5 2.5v12.874a2.5 2.5 0 0 1-2.5 2.5M5.563 4.063a1.5 1.5 0 0 0-1.5 1.5v12.874a1.5 1.5 0 0 0 1.5 1.5h12.874a1.5 1.5 0 0 0 1.5-1.5V5.563a1.5 1.5 0 0 0-1.5-1.5Z" />
-	        <path fill="currentColor" d="M12 16.594A4.595 4.595 0 1 1 16.6 12a4.6 4.6 0 0 1-4.6 4.594M12 8.4a3.595 3.595 0 1 0 3.6 3.6A3.6 3.6 0 0 0 12 8.4" />
-	        <circle cx="17.2" cy="6.83" r="1.075" fill="currentColor" />
-            </svg>
-            Instagram</a></p>
-
-            <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-	        <path d="M0 0h24v24H0z" fill="none" />
-	        <path fill="currentColor" d="M19.02 4.975A9.93 9.93 0 0 0 2.07 12A9.935 9.935 0 0 0 12 21.935a10 10 0 0 0 3.8-.75a10.2 10.2 0 0 0 3.22-2.16a9.934 9.934 0 0 0 0-14.05m-.7 13.34a8.92 8.92 0 0 1-5.32 2.57v-6.56h1.88a1 1 0 0 0 0-2H13v-2.74a1 1 0 0 1 1-1h1.2a1 1 0 0 0 0-2h-1.7a2.5 2.5 0 0 0-2.5 2.5v3.24H9.13a1 1 0 1 0 0 2H11v6.56a8.919 8.919 0 1 1 9.26-5.47a9.1 9.1 0 0 1-1.94 2.9" />
-            </svg>
-            Facebook</a></p>
-
-        </div>
-
-        <!-- Navigation -->
-        <div class="footer_links">
-            <p><a href="index.html">Home</a></p>
-            <p><a href="recipe.html">Recipe</a></p>
-            <p><a href="about.html">About</a></p>
-        </div>
-
-        <!-- Spotify -->
-       <div class="footer_spotify">
-
-    <div class="spotify_links">
-        <a href="#" class="spotify_link_one">
-            https://open.spotify.com/track/4gRA0i5sxx3jAhHaVjPnUN?si=aaba07b09223416c
-        </a>
-
-        <a href="#" class="spotify_link_two">
-            https://open.spotify.com/album/6Xuu2z00jxRPZei4lJ9neK
-        </a>
-    </div>
-
-    <div class="footer_etsy">
-
-        <span class="etsy_icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-	    <path d="M0 0h24v24H0z" fill="none" />
-	    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
-		<path d="M2 10c.78-3.816 3.67-6.87 7.406-7.91c.314-.087.47-.131.555-.038c.085.094.022.248-.102.558L9 4.5M14 2c3.816.78 6.87 3.67 7.91 7.406c.087.314.131.47.038.555c-.094.085-.248.022-.558-.102L19.5 9m2.5 5c-.78 3.816-3.67 6.87-7.406 7.91c-.314.087-.47.131-.555.038c-.085-.094-.022-.248.102-.558L15 19.5M10 22c-3.816-.78-6.87-3.67-7.91-7.406c-.087-.314-.131-.47-.038-.555c.094-.085.248-.022.558.102L4.5 15" />
-		<path stroke-linejoin="round" d="m8.613 11.665l3.499-4.492c.274-.351.787-.132.787.336v3.476c0 .28.2.508.449.508h1.702c.386 0 .592.514.337.842l-3.499 4.492c-.274.351-.787.132-.787-.336v-3.476c0-.28-.2-.508-.449-.508H8.95c-.386 0-.593-.514-.337-.842" />
-	</g>
-</svg>
-</span>
-
-    <p>Etsy is powered by 100%<br>renewable electricity.</p>
-
-    </div>
-
-</div>
-
-</footer>
+                            <a href="https://open.spotify.com/track/64MgjDp6ijaLvS3T83JHX9" class="spotify_link_one">
+                                Listen on Spotify <br> https://open.spotify.com/track/64MgjDp6ijaLvS3T83JHX9</a>
 
 
+                        </div>
 
+                        <div class="footer_etsy">
 
+                            <span class="etsy_icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                    viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                                        <path
+                                            d="M2 10c.78-3.816 3.67-6.87 7.406-7.91c.314-.087.47-.131.555-.038c.085.094.022.248-.102.558L9 4.5M14 2c3.816.78 6.87 3.67 7.91 7.406c.087.314.131.47.038.555c-.094.085-.248.022-.558-.102L19.5 9m2.5 5c-.78 3.816-3.67 6.87-7.406 7.91c-.314.087-.47.131-.555.038c-.085-.094-.022-.248.102-.558L15 19.5M10 22c-3.816-.78-6.87-3.67-7.91-7.406c-.087-.314-.131-.47-.038-.555c.094-.085.248-.022.558.102L4.5 15" />
+                                        <path stroke-linejoin="round"
+                                            d="m8.613 11.665l3.499-4.492c.274-.351.787-.132.787.336v3.476c0 .28.2.508.449.508h1.702c.386 0 .592.514.337.842l-3.499 4.492c-.274.351-.787.132-.787-.336v-3.476c0-.28-.2-.508-.449-.508H8.95c-.386 0-.593-.514-.337-.842" />
+                                    </g>
+                                </svg>
+                            </span>
 
+                            <p>Etsy is powered by 100%<br>renewable electricity.</p>
 
+                        </div>
 
+                    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </footer>
 
     </div>
 
 
-<script src="js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>

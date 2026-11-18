@@ -18,7 +18,9 @@
 <body>
 
     <div class="container">
+
         <!-- navigation -->
+
         <nav class="navigation">
 
             <div class="menu_container">
@@ -26,7 +28,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="recipe.html">Recipes</a></li>
-                    <li><a href="search.html">Search</a></li>
+                    <li><a href="search.html" class="active">Search</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
 
@@ -37,9 +39,9 @@
             <div class="hamburger_menu">
 
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
-	            <path d="M0 0h512v512H0z" fill="none" />
-	            <path fill="currentColor" d="M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z" />
-                </svg>
+                        <path d="M0 0h512v512H0z" fill="none" />
+                        <path fill="currentColor" d="M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z" />
+                    </svg>
                 </span>
 
             </div>
@@ -48,10 +50,275 @@
 
         <div class="mobile_menu">
 
-          <ul>
+            <ul>
+
                 <li><a class="menu_item" href="index.html">Home</a></li>
-                <li><a class="menu_item" href="about-us.html">Recipes</a></li>
-                <li><a class="menu_item" href="">Search</a></li>
+                <li><a class="menu_item" href="about.html">Recipes</a></li>
+                <li><a class="menu_item" href="search.html">Search</a></li>
+                <li><a class="menu_item" href="about.html">About</a></li>
             </ul>
 
         </div>
+
+        <!-- hero section -->
+
+        <section class="search_section">
+
+            <div class="search_content">
+
+                <h2>FULL SEARCH</h2>
+
+                <div class="hero_search">
+
+                    <div class="search_box">
+                        <span class="search_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                                <path d="M0 0h16v16H0z" fill="none" />
+                                <path fill="currentColor"
+                                    d="M6.5 1a5.5 5.5 0 0 1 4.437 8.749l3.556 2.846a1.351 1.351 0 1 1-1.898 1.898l-2.846-3.556A5.5 5.5 0 1 1 6.5 1m0 2a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7" />
+                            </svg>
+
+                        </span>
+                        <input type="text" placeholder="Search" class="search_input">
+
+                    </div>
+
+                </div>
+
+                <p>Let's go already!</p>
+
+            </div>
+
+            <div class="search_filter">
+
+                <h2>Search filter: category</h2>
+
+                <div class="filter_categories">
+                    <label class="filter_option">
+                        <input type="radio" name="category" value="seafood" checked>
+                        <span>Seafood</span>
+                    </label>
+
+                    <label class="filter_option">
+                        <input type="radio" name="category" value="beefpork" checked>
+                        <span>Beef/Pork</span>
+                    </label>
+
+                    <label class="filter_option">
+                        <input type="radio" name="category" value="chicken" checked>
+                        <span>Chicken</span>
+                    </label>
+
+                    <label class="filter_option">
+                        <input type="radio" name="category" value="snacks" checked>
+                        <span>Snacks</span>
+                    </label>
+
+                    <label class="filter_option">
+                        <input type="radio" name="category" value="beef-pasta" checked>
+                        <span>Pasta</span>
+                    </label>
+
+                    <label class="filter_option">
+                        <input type="radio" name="category" value="vegetarian" checked>
+                        <span>Vegetarian</span>
+                    </label>
+
+                    <label class="filter_option">
+                        <input type="radio" name="category" value="dessert" checked>
+                        <span>Dessert</span>
+                    </label>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="search_results">
+
+            <h2 class="results_heading">EXPLORE OUR RECIPES</h2>
+
+            <div class="search_result">
+
+                <p class="result_category1">Category: <span>SEAFOOD</span></p>
+
+                <h2 class="result_title"><a href="">GARLIC BUTTER SALMON</h2></a>
+
+
+                <a href=""></a>
+
+                <p class="result_description">Tender salmon baked with garlic, fresh herbs and lemon. A simple,
+                    flavorful dish that's perfect for any occasion.</p>
+
+            </div>
+
+            <div class="search_result">
+
+                <p class="result_category2">Category: <span>BEEF/PORK</span></p>
+
+                <h2 class="result_title"><a href="">KOREAN BEEF BOWL</h2></a>
+
+                <p class="result_description">A flavorful Korean-inspired beef bowl with tender beef, rice and fresh
+                    vegetables, topped with a delicious savory sauce.</p>
+
+
+            </div>
+
+            <div class="search_result">
+
+                <p class="result_category3">Category: <span>CHICKEN</span></p>
+
+                <h2 class="result_title"><a href="">CREAMY COCONUT CHICKEN</h2></a>
+
+                <p class="result_description">Tender chicken simmered in a creamy coconut sauce with aromatic spices. A
+                    comforting dish full of rich flavors.</p>
+
+            </div>
+
+            <div class="search_result">
+
+                <p class="result_category4">Category: <span>SNACKS</span></p>
+
+                <h2 class="result_title"><a href="">CRISPY SWEET POTATO BITES</h2></a>
+
+                <p class="result_description">Crispy roasted sweet potato bites seasoned with herbs and spices. A
+                    delicious snack that's perfect for sharing.</p>
+
+            </div>
+
+            <div class="search_result">
+
+                <p class="result_category5">Category: <span>PASTA</span></p>
+
+                <h2 class="result_title"><a href="">SPICY TOMATO PASTA</h2></a>
+
+                <p class="result_description">A delicious pasta dish tossed in a rich tomato sauce with garlic, fresh
+                    basil and a little kick of chili.</p>
+
+            </div>
+
+            <div class="search_result">
+
+                <p class="result_category6">Category: <span>VEGETARIAN</span></p>
+
+                <h2 class="result_title"><a href="">ROASTED VEGGIE BOWL</h2></a>
+
+                <p class="result_description">A colorful bowl filled with roasted seasonal vegetables, fresh greens and
+                    a flavorful dressing. Healthy and satisfying.</p>
+
+            </div>
+
+            <div class="search_result">
+
+                <p class="result_category7">Category: <span>DESSERT</span></p>
+
+                <h2 class="result_title"><a href="">RASPBERRY CHIA PUDDING</h2></a>
+
+                <p class="result_description">A creamy chia pudding layered with sweet raspberry compote. A fresh and
+                    delicious treat for breakfast or dessert.</p>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="footer">
+
+            <div class="footer_container">
+
+
+                <!-- Sociale medier -->
+                <div class="footer_social">
+
+                    <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
+                                <path d="M0 0h48v48H0z" fill="none" />
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M43.112 14.394a5 5 0 0 0-3.533-3.533c-2.314-.894-24.732-1.332-31.236.025A5 5 0 0 0 4.81 14.42c-1.045 4.583-1.124 14.491.026 19.177a5 5 0 0 0 3.533 3.533c4.583 1.055 26.371 1.203 31.236 0a5 5 0 0 0 3.533-3.533c1.114-4.993 1.193-14.287-.026-19.203" />
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M30.567 23.995L20.12 18.004v11.982Z" />
+                            </svg>
+
+                            YouTube</a></p>
+
+                    <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
+                                <path d="M0 0h48v48H0z" fill="none" />
+                                <rect width="37" height="37" x="5.5" y="5.5" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" rx="4" ry="4" />
+                                <circle cx="35.35" cy="12.65" r="2.25" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="24" cy="24" r="8.25" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            Instagram</a></p>
+
+                    <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
+                                <path d="M0 0h48v48H0z" fill="none" />
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M24 42.5V18.575a5.075 5.075 0 0 1 5.075-5.075c2.498 0 4.057.74 5.126 2.123m-14.5 7.665h10.15" />
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M38.5 5.5h-29a4 4 0 0 0-4 4v29a4 4 0 0 0 4 4h29a4 4 0 0 0 4-4v-29a4 4 0 0 0-4-4" />
+                            </svg>
+
+                            Facebook</a></p>
+
+                </div>
+
+                <!-- Navigation -->
+                <div class="footer_links">
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="recipe.html">Recipe</a></p>
+                    <p><a href="about.html">About</a></p>
+                </div>
+
+                <!-- Spotify -->
+                <div class="footer_spotify">
+
+                    <div class="spotify_links">
+
+                        <a href="https://open.spotify.com/track/64MgjDp6ijaLvS3T83JHX9" class="spotify_link_one">
+                            Listen on Spotify <br> https://open.spotify.com/track/64MgjDp6ijaLvS3T83JHX9</a>
+
+
+                    </div>
+
+                    <div class="footer_etsy">
+
+                        <span class="etsy_icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                                    <path
+                                        d="M2 10c.78-3.816 3.67-6.87 7.406-7.91c.314-.087.47-.131.555-.038c.085.094.022.248-.102.558L9 4.5M14 2c3.816.78 6.87 3.67 7.91 7.406c.087.314.131.47.038.555c-.094.085-.248.022-.558-.102L19.5 9m2.5 5c-.78 3.816-3.67 6.87-7.406 7.91c-.314.087-.47.131-.555.038c-.085-.094-.022-.248.102-.558L15 19.5M10 22c-3.816-.78-6.87-3.67-7.91-7.406c-.087-.314-.131-.47-.038-.555c.094-.085.248-.022.558.102L4.5 15" />
+                                    <path stroke-linejoin="round"
+                                        d="m8.613 11.665l3.499-4.492c.274-.351.787-.132.787.336v3.476c0 .28.2.508.449.508h1.702c.386 0 .592.514.337.842l-3.499 4.492c-.274.351-.787.132-.787-.336v-3.476c0-.28-.2-.508-.449-.508H8.95c-.386 0-.593-.514-.337-.842" />
+                                </g>
+                            </svg>
+                        </span>
+
+                        <p>Etsy is powered by 100%<br>renewable electricity.</p>
+
+                    </div>
+
+                </div>
+
+        </footer>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
