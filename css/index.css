@@ -820,4 +820,8 @@ h6 {
         grid-column: 2 / span 4;
     }
 
+    .hero_search {
+    grid-column: 2 / span 5;
+}
+
 }
